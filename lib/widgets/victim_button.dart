@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 class VictimButton extends StatelessWidget {
   final bool iAmSafe;
-  final VoidCallback onPressed;
   final double? height;
   final Color? backgroundColor;
   const VictimButton(
       {Key? key,
       this.iAmSafe = false,
-      required this.onPressed,
       this.height = 80,
       this.backgroundColor = Colors.red})
       : super(key: key);
@@ -16,7 +14,7 @@ class VictimButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed,
+      onPressed: () {},
       style: ElevatedButton.styleFrom(
           minimumSize: Size.fromHeight(height!),
           backgroundColor: backgroundColor,

@@ -13,22 +13,20 @@ class EmergencyPage extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            const ToolRow(),
-            const SizedBox(
+          children: const [
+            ToolRow(),
+            SizedBox(
               height: 40,
             ),
             VictimButton(
-              onPressed: () => {},
               height: 120,
             ),
-            const SizedBox(
+            SizedBox(
               height: 28,
             ),
             VictimButton(
-              onPressed: () => {},
               iAmSafe: true,
-              backgroundColor: const Color(0xFF15BE6C),
+              backgroundColor: Color(0xFF15BE6C),
             )
           ],
         ),

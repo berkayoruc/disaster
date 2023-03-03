@@ -1,8 +1,10 @@
+import 'package:volume_controller/volume_controller.dart';
+
 import '../../core/states/torch_state.dart';
 import '../../core/states/whistle_state.dart';
 import 'tool_row_button.dart';
 
-import 'package:volume_control/volume_control.dart';
+// import 'package:volume_control/volume_control.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
@@ -33,7 +35,7 @@ class _ToolRowState extends State<ToolRow> {
             if (isWhitsleOn) {
               await player.stop();
             } else {
-              VolumeControl.setVolume(1);
+              VolumeController().setVolume(1);
               await player.setVolume(1);
               await player.setReleaseMode(ReleaseMode.loop);
               await player.setSourceAsset("sound/alarm.wav");

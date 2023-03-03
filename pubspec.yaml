@@ -2,7 +2,7 @@ name: disaster
 description: Disaster open-source app.
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
   sdk: ">=2.19.2 <3.0.0"
@@ -15,7 +15,8 @@ dependencies:
   cupertino_icons: 1.0.2
   provider: 6.0.3
   torch_light: 1.0.0
-  volume_control: 0.1.5
+  # volume_control: 0.1.5
+  volume_controller: ^2.0.6
 
 dev_dependencies:
   flutter_test:
